@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>{{appname}}</title>
+        <script type="text/javascript">
+            window.onload = function() {
+                setTimeout(function() {
+                    document.forms["login"].submit();
+                }, 10);
+            }
+        </script>
+    </head>
+
+    <body>
+        <form id="login" name="login" action="{{return}}" method="{{method}}">
+            <input name="tokencode" type="hidden" value="{{tokencode}}">
+        </form>
+
+
+    </body>
+
+</html>

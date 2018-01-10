@@ -1,0 +1,49 @@
+{
+  "name": "userly-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"webpack --watch\" \"nodemon\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "farcek",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.0.37",
+    "@types/node": "^8.0.53",
+    "@types/sequelize": "^4.0.75",
+    "bulma": "^0.6.1",
+    "clean-webpack-plugin": "^0.1.16",
+    "concurrently": "^3.5.1",
+    "css-loader": "^0.28.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.7.2",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "ts-loader": "^2.3.7",
+    "typescript": "^2.5.3",
+    "webpack": "^3.5.5",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "classrouter": "git+https://github.com/Farcek/classrouter.git#v1.1.2",
+    "config": "^1.26.2",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.1",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.0.1",
+    "moment": "^2.19.1",
+    "morgan": "^1.9.0",
+    "mysql2": "^1.4.2",
+    "reflect-metadata": "^0.1.10",
+    "sequelize": "^4.13.4",
+    "twig": "^1.10.5",
+    "uuid": "^3.1.0",
+    "winston": "^2.4.0"
+  }
+}

@@ -1,0 +1,4 @@
+{
+    "watch": ["dist/bundle.js"],
+    "exec": "node dist/bundle.js"
+}

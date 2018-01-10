@@ -1,0 +1,6 @@
+/dist/*
+/.vscode/*
+/config/development.js
+/config/production.js
+/node_modules/*
+/sql.log

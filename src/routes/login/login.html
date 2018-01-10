@@ -1,0 +1,67 @@
+{% extends layout %}
+<!--  -->
+{% block content %}
+<section class="hero is-fullheight is-medium is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-centered">
+                <article class="card ">
+                    <div class="card-content ">
+                        <h1 class="title ">
+                            {{appname}}
+                        </h1>
+                        {% if errors %}
+                        <article class="message is-danger">
+                            <div class="message-body">
+                                {{errors}}
+                            </div>
+                        </article>
+                        {% endif %}
+                        <form action="" method="post">
+                            <div class="field">
+                                <label class="label">Эмайл эсвэл утас</label>
+                                <div class="control has-icons-left ">
+                                    <input class="input " type="text" name="user" placeholder="bold@yahoo.com" value="{{values.user}}">
+                                    <span class="icon is-small is-left">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label"> Нууц үг</label>
+                                <div class="control has-icons-left">
+                                    <input class="input " name="pass" type="password">
+                                    <span class="icon is-small is-left">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="checkbox"><input type="checkbox"> Намайг сана </label>
+                                </div>
+                            </div>
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="button is-primary" type="submit">Нэвтрэх</button>
+                                </div>
+                                <div class="control">
+                                    <a class="button is-text" href="forgetpass"> Нууц үгээ мартсан </a>
+                                </div>
+                            </div>
+                        </form>
+                        <hr>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <a class="button is-link" href="register">Бүртгүүлэх</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
